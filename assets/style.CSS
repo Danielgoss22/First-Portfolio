@@ -1,5 +1,36 @@
 * {
-  background-color: azure;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+body {
+  background-color: azure;
+}
+.navigation {
+  padding: 20px;
+  font-family: "Figtree", sans-serif;
+  background-color: rgba(19, 19, 216, 0.795);
+  color: azure;
+}
+.navigation h1 {
+  display: inline-block;
+  font-size: 48px;
+}
+.navigation nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: "Figtree", sans-serif;
+  font-size: 20px;
+}
+.navigation nav ul {
+  list-style-type: none;
+}
+.navigation nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+a {
+  color: azure;
+  text-decoration: none;
 }
