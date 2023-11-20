@@ -34,3 +34,20 @@ a {
   color: azure;
   text-decoration: none;
 }
+
+main {
+  display: flex;
+  margin-top: 2%;
+}
+#aside {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: space-between;
+}
+.section {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  padding: 20px;
+}
