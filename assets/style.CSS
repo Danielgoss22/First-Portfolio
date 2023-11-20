@@ -4,6 +4,10 @@
   margin: 0;
 }
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background-color: azure;
 }
 .navigation {
@@ -37,17 +41,48 @@ a {
 
 main {
   display: flex;
-  margin-top: 2%;
+  flex-wrap: wrap;
+  flex-grow: 1;
 }
-#aside {
+aside {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 30px;
   justify-content: space-between;
+  background-color: rebeccapurple;
 }
-.section {
+/* div {
   display: flex;
   flex: 3;
   flex-direction: column;
-  padding: 20px;
+  padding: 60px;
+} */
+.applications {
+  flex: 4;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.apps {
+  font-family: "Figtree", sans-serif;
+  border-style: solid;
+  border-width: 2px;
+  padding: 15px;
+  margin: 30px;
+  flex: 0 0 300px;
+}
+.apps header {
+  font-family: "Figtree", sans-serif;
+  padding: 15px;
+}
+.apps img {
+  width: auto;
+}
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
 }
