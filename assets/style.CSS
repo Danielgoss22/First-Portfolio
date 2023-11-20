@@ -35,7 +35,7 @@ body {
   margin-left: 25px;
 }
 a {
-  color: azure;
+  color: black;
   text-decoration: none;
 }
 
@@ -50,13 +50,13 @@ aside {
   padding: 30px;
   justify-content: space-between;
   background-color: rebeccapurple;
+  border-right: solid black;
 }
-/* div {
-  display: flex;
-  flex: 3;
+.aboutme {
   flex-direction: column;
-  padding: 60px;
-} */
+  align-self: start;
+  justify-content: center;
+}
 .applications {
   flex: 4;
   padding: 40px;
@@ -76,9 +76,19 @@ aside {
 .apps header {
   font-family: "Figtree", sans-serif;
   padding: 15px;
+  align-self: flex-end;
 }
 .apps img {
   width: auto;
+}
+footer {
+  align-self: self-end;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.phone {
+  justify-content: flex-start;
 }
 @media screen and (max-width: 768px) {
   main,
