@@ -46,48 +46,36 @@ a {
 } */
 .about-me {
   display: flex;
-  margin-top: 20px;
-  margin-right: 20px;
+  margin: 20px;
 }
 .about-me h2 {
-  align-self: flex-start;
+  text-align: right;
   border-right: solid black;
   font-family: "Figtree", sans-serif;
   font-size: 40px;
+  width: 20%;
+  padding-right: 5px;
 }
 
 .about-me p {
-  justify-content: flex-end;
+  text-align: center;
   font-family: "Figtree", sans-serif;
+  width: 80%;
 }
-/* aside {
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-  justify-content: space-between;
-  border-right: solid black;
-  font-size: 30px;
-  font-family: "Figtree", sans-serif;
-} */
-/* .aboutme {
-  flex-direction: column;
-  align-self: start;
-  justify-content: center;
-} */
+
 .applications {
-  padding: 40px;
+  margin: 20px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
   border-right: solid black;
   font-family: "Figtree", sans-serif;
 }
 .applications h2 {
-  align-self: flex-start;
+  text-align: right;
+  width: 20%;
   border-right: solid black;
   font-family: "Figtree", sans-serif;
   font-size: 40px;
+  padding-right: 5px;
 }
 .apps {
   font-family: "Figtree", sans-serif;
@@ -95,7 +83,17 @@ a {
   border-width: 2px;
   padding: 15px;
   margin: 30px;
-  flex: 0 0 300px;
+  display: flex;
+  flex-direction: column;
+}
+.small-work-section {
+  display: flex;
+  flex-direction: row;
+}
+.small-work-section a {
+  width: 50%;
+  padding: 20px;
+  border: solid black;
 }
 .apps header {
   font-family: "Figtree", sans-serif;
@@ -103,7 +101,7 @@ a {
   align-self: center;
 }
 .apps img {
-  width: auto;
+  width: 100%;
 }
 
 .contact {
@@ -114,21 +112,27 @@ a {
 }
 .contact h2 {
   border-right: solid black;
+  width: 20%;
+  padding-right: 5px;
 }
-.contact nav {
+.contact {
   padding-top: 30px;
   margin-top: 30px;
   text-align: center;
   font-family: "Figtree", sans-serif;
   font-size: 30px;
-  display: inline;
 }
-.contact nav ul {
+.contact ul {
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 80%;
 }
-.contact nav ul li {
-  display: inline-block;
-  margin-left: 25px;
+.contact ul li {
+  /* display: inline-block;
+  align-self: start; */
+  /* margin-left: 25px; */
 }
 
 @media screen and (max-width: 768px) {
