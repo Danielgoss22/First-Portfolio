@@ -44,7 +44,20 @@ main {
   flex-wrap: wrap;
   flex-grow: 1;
 }
-aside {
+.about-me {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-me h2 {
+  align-self: flex-start;
+  border-right: solid black;
+  font-family: "Figtree", sans-serif;
+}
+.about-me p {
+  justify-content: flex-end;
+  font-family: "Figtree", sans-serif;
+}
+/* aside {
   display: flex;
   flex-direction: column;
   padding: 30px;
@@ -52,7 +65,7 @@ aside {
   border-right: solid black;
   font-size: 30px;
   font-family: "Figtree", sans-serif;
-}
+} */
 .aboutme {
   flex-direction: column;
   align-self: start;
@@ -82,21 +95,17 @@ aside {
 .apps img {
   width: auto;
 }
-footer {
-  display: flex;
-  width: auto;
-  background-color: rgba(19, 19, 216, 0.795);
-}
+
 .contact {
-  padding: 20px;
+  display: flex;
+  justify-content: center;
   font-family: "Figtree", sans-serif;
-  background-color: rgba(19, 19, 216, 0.795);
   color: azure;
 }
 .contact nav {
   padding-top: 30px;
-  margin-right: 20px;
-  float: left;
+  margin-top: 30px;
+  text-align: center;
   font-family: "Figtree", sans-serif;
   font-size: 30px;
   display: inline;
@@ -107,7 +116,6 @@ footer {
 .contact nav ul li {
   display: inline-block;
   margin-left: 25px;
-  float: none;
 }
 
 @media screen and (max-width: 768px) {
