@@ -49,8 +49,9 @@ aside {
   flex-direction: column;
   padding: 30px;
   justify-content: space-between;
-  background-color: rebeccapurple;
   border-right: solid black;
+  font-size: 30px;
+  font-family: "Figtree", sans-serif;
 }
 .aboutme {
   flex-direction: column;
@@ -82,14 +83,33 @@ aside {
   width: auto;
 }
 footer {
-  align-self: self-end;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: flex;
+  width: auto;
+  background-color: rgba(19, 19, 216, 0.795);
 }
-.phone {
-  justify-content: flex-start;
+.contact {
+  padding: 20px;
+  font-family: "Figtree", sans-serif;
+  background-color: rgba(19, 19, 216, 0.795);
+  color: azure;
 }
+.contact nav {
+  padding-top: 30px;
+  margin-right: 20px;
+  float: left;
+  font-family: "Figtree", sans-serif;
+  font-size: 30px;
+  display: inline;
+}
+.contact nav ul {
+  list-style-type: none;
+}
+.contact nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+  float: none;
+}
+
 @media screen and (max-width: 768px) {
   main,
   nav {
