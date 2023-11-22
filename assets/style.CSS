@@ -44,11 +44,7 @@ a {
   margin-right: auto;
   width: 50%;
 }
-/* main {
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
-} */
+
 .about-me {
   display: flex;
   margin: 20px;
@@ -69,7 +65,7 @@ a {
 }
 
 .applications {
-  margin: 20px;
+  margin: 25px;
   display: flex;
   border-right: solid black;
   font-family: "Figtree", sans-serif;
@@ -128,6 +124,7 @@ a {
 .contact {
   padding-top: 30px;
   margin-top: 30px;
+  margin-bottom: 30px;
   text-align: center;
   font-family: "Figtree", sans-serif;
   font-size: 30px;
@@ -141,8 +138,20 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  nav,
-  body {
+  header {
+    margin: auto;
     flex-direction: column;
+  }
+  .small-work-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact h2 {
+    flex-direction: column;
+    font-size: 30px;
+  }
+  .contact ul {
+    flex-direction: column;
+    margin: auto;
   }
 }
